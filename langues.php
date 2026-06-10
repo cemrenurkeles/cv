@@ -10,8 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/commun.css" />
-    <link rel="stylesheet" href="./css/langues.css" />
+    <link rel="stylesheet" href="./assets/css/commun.css" />
+    <link rel="stylesheet" href="./assets/css/langues.css" />
   </head>
   <body data-page="langues">
     <header></header>
