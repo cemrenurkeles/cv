@@ -1,9 +1,101 @@
-main h1 {
-  max-width: 14ch;
+main > section {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  box-shadow: none;
 }
 
-main section > div {
+main > section > header {
+  padding: 22px 18px 18px;
+  background: rgba(128, 152, 225, 0.32);
+}
+
+main > section > header h1 {
+  font-size: clamp(3rem, 7vw, 4.8rem);
+}
+
+main > section > header::after {
+  content: "";
+  display: block;
+  height: 10px;
+  margin-top: 14px;
+  background: var(--panel-soft);
+}
+
+main > section > div {
   display: grid;
-  gap: 16px;
-  margin-top: 32px;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+main > section > div > article {
+  padding: 28px 28px 30px;
+  border: 0;
+  border-radius: 0;
+  background: rgba(128, 152, 225, 0.52);
+}
+
+main > section > div > article > header {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+main > section > div > article > header span {
+  display: block;
+  width: 100px;
+  height: 18px;
+  margin-left: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+main > section > div > article > header time {
+  color: var(--panel-soft);
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-weight: 800;
+}
+
+main > section > div > article h2 {
+  max-width: 24ch;
+  margin-left: 184px;
+  color: var(--text);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1.02;
+}
+
+main > section > div > article ul {
+  max-width: 24ch;
+  margin-top: 14px;
+  margin-left: 184px;
+  padding-left: 24px;
+}
+
+main > section > div > article li {
+  color: var(--panel-soft);
+  font-size: clamp(1.15rem, 2.4vw, 1.7rem);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+main > section > div > article li + li {
+  margin-top: 10px;
+}
+
+@media (max-width: 860px) {
+  main > section > div > article > header {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  main > section > div > article > header span {
+    margin-left: 0;
+  }
+
+  main > section > div > article h2,
+  main > section > div > article ul {
+    max-width: none;
+    margin-left: 0;
+  }
 }

@@ -1,12 +1,12 @@
 :root {
-  --text: #1f2937;
-  --muted: #6b7280;
-  --line: rgba(31, 41, 55, 0.12);
-  --surface: rgba(255, 255, 255, 0.72);
-  --surface-strong: #fffdf8;
-  --accent: #c76b32;
-  --accent-dark: #9d5123;
-  --shadow: 0 24px 80px rgba(77, 52, 36, 0.14);
+  --bg: #0f2442;
+  --panel: #8098e1;
+  --panel-soft: #afbff6;
+  --text: #ffffff;
+  --muted: rgba(255, 255, 255, 0.9);
+  --line: rgba(255, 255, 255, 0.22);
+  --surface: rgba(128, 152, 225, 0.3);
+  --shadow: 0 24px 60px rgba(4, 10, 24, 0.3);
 }
 
 * {
@@ -23,9 +23,7 @@ body {
   min-height: 100vh;
   font-family: "Plus Jakarta Sans", sans-serif;
   color: var(--text);
-  background:
-    radial-gradient(circle at top left, rgba(199, 107, 50, 0.22), transparent 28%),
-    linear-gradient(135deg, #f8f3ec 0%, #efe5d7 100%);
+  background: var(--bg);
 }
 
 a {
@@ -57,7 +55,6 @@ nav {
   border: 1px solid var(--line);
   border-radius: 24px;
   background: var(--surface);
-  backdrop-filter: blur(18px);
   box-shadow: var(--shadow);
 }
 
@@ -73,8 +70,8 @@ nav .brand strong:first-child {
   width: 48px;
   height: 48px;
   border-radius: 16px;
-  color: #fff;
-  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  color: var(--bg);
+  background: var(--panel-soft);
 }
 
 nav .brand span {
@@ -108,7 +105,7 @@ nav li a::after {
   height: 2px;
   transform: scaleX(0);
   transform-origin: left;
-  background: var(--accent);
+  background: var(--panel-soft);
   transition: transform 0.25s ease;
 }
 
@@ -125,9 +122,9 @@ nav > a:last-child,
   justify-content: center;
   padding: 12px 18px;
   border-radius: 999px;
-  color: #fff;
-  font-weight: 700;
-  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  color: var(--bg);
+  font-weight: 800;
+  background: var(--panel-soft);
 }
 
 .actions a:last-child {
@@ -138,19 +135,20 @@ nav > a:last-child,
   border: 1px solid var(--line);
   border-radius: 999px;
   font-weight: 700;
+  background: rgba(175, 191, 246, 0.08);
 }
 
 main > section {
   padding: 32px;
   border: 1px solid var(--line);
   border-radius: 28px;
-  background: rgba(255, 253, 248, 0.84);
+  background: rgba(128, 152, 225, 0.16);
   box-shadow: var(--shadow);
 }
 
 main header p {
   margin-bottom: 12px;
-  color: var(--accent-dark);
+  color: var(--panel-soft);
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -158,34 +156,42 @@ main header p {
 }
 
 main h1 {
+  color: var(--panel-soft);
   font-size: clamp(2.5rem, 5vw, 4.8rem);
   line-height: 0.95;
 }
 
 main article {
   padding: 20px 22px;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 20px;
-  background: #f8f1e8;
+  background: var(--panel);
 }
 
 main article h2 {
-  font-size: 1.15rem;
+  color: var(--text);
+  font-size: 1.35rem;
 }
 
-main article p {
-  color: var(--muted);
+main article p,
+main article li {
+  color: var(--text);
   line-height: 1.6;
 }
 
 main article p + p,
-main article h2 + p {
+main article h2 + p,
+main article ul {
   margin-top: 10px;
 }
 
 main article time,
 main article strong {
-  color: var(--accent-dark);
+  color: var(--panel-soft);
+}
+
+main article ul {
+  padding-left: 20px;
 }
 
 @media (max-width: 980px) {

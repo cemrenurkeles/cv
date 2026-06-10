@@ -19,18 +19,29 @@
       <section>
         <header>
           <p>Formation</p>
-          <h1>Mon parcours universitaire et scolaire</h1>
+          <h1>Formations</h1>
         </header>
         <div>
           <article>
-            <p><strong>Depuis 2022</strong></p>
-            <h2>Licence en informatique</h2>
-            <p>Universite de Strasbourg</p>
+            <header>
+              <span></span>
+              <time datetime="2022">Depuis 2022</time>
+            </header>
+            <h2>Etudiante - Universite de Strasbourg</h2>
+            <ul>
+              <li>Licence en informatique avec resolution pratique de problemes.</li>
+              <li>Programme soutenu en mathematiques pour la composante theorique de l'informatique.</li>
+            </ul>
           </article>
           <article>
-            <p><strong>2019 - 2022</strong></p>
-            <h2>Bac general</h2>
-            <p>Lycee des Pontonniers, Strasbourg</p>
+            <header>
+              <span></span>
+              <time datetime="2019">2019 - 2022</time>
+            </header>
+            <h2>Lyceenne - Lycee des Pontonniers, Strasbourg</h2>
+            <ul>
+              <li>Parcours general avec specialites mathematiques, physique-chimie et SVT.</li>
+            </ul>
           </article>
         </div>
       </section>
