@@ -1,6 +1,6 @@
 class Component {
-  constructor(rootSelector) {
-    this.root = document.querySelector(rootSelector);
+  constructor(selector) {
+    this.root = document.querySelector(selector);
   }
 
   render() {
@@ -9,20 +9,19 @@ class Component {
 }
 
 class Navbar extends Component {
-  constructor(rootSelector, options) {
-    super(rootSelector);
-    this.brand = options.brand;
-    this.role = options.role;
+  constructor(selector, options) {
+    super(selector);
+    this.currentPage = options.currentPage;
     this.links = options.links;
-    this.cta = options.cta;
+    this.contact = options.contact;
   }
 
   createLinks() {
     return this.links
-      .map(
-        (link) =>
-          `<li><a href="${link.href}">${link.label}</a></li>`
-      )
+      .map((link) => {
+        const current = link.page === this.currentPage ? ' class="current"' : "";
+        return `<li><a${current} href="${link.href}">${link.label}</a></li>`;
+      })
       .join("");
   }
 
@@ -32,20 +31,18 @@ class Navbar extends Component {
     }
 
     this.root.innerHTML = `
-      <nav class="navbar" aria-label="Navigation principale">
-        <div class="navbar__brand">
-          <div class="navbar__badge">${this.brand.initials}</div>
-          <div>
-            <p class="navbar__title">${this.brand.name}</p>
-            <p class="navbar__subtitle">${this.role}</p>
-          </div>
-        </div>
-
-        <ul class="navbar__links">
+      <nav aria-label="Navigation principale">
+        <a class="brand" href="./index.php">
+          <strong>CK</strong>
+          <span>
+            <span>Cemrenur Keles</span>
+            <span>Etudiante en informatique</span>
+          </span>
+        </a>
+        <ul>
           ${this.createLinks()}
         </ul>
-
-        <a class="navbar__cta" href="${this.cta.href}">${this.cta.label}</a>
+        <a href="${this.contact.href}">${this.contact.label}</a>
       </nav>
     `;
   }
@@ -53,22 +50,19 @@ class Navbar extends Component {
 
 class PortfolioApp {
   constructor() {
-    this.navbar = new Navbar("#site-header", {
-      brand: {
-        initials: "CV",
-        name: "Votre Nom",
-      },
-      role: "Developpeur Full Stack",
+    this.navbar = new Navbar("body > header", {
+      currentPage: document.body.dataset.page || "home",
       links: [
-        { label: "Accueil", href: "#main-content" },
-        { label: "A propos", href: "#about" },
-        { label: "Projets", href: "#projets" },
-        { label: "Competences", href: "#skills" },
+        { label: "Accueil", href: "./index.php", page: "home" },
+        { label: "Formation", href: "./formation.php", page: "formation" },
+        { label: "Experiences", href: "./experiences.php", page: "experiences" },
+        { label: "Competences", href: "./competences.php", page: "competences" },
+        { label: "Langues", href: "./langues.php", page: "langues" }
       ],
-      cta: {
+      contact: {
         label: "Contact",
-        href: "#contact",
-      },
+        href: "./contact.php"
+      }
     });
   }
 
@@ -78,6 +72,5 @@ class PortfolioApp {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const app = new PortfolioApp();
-  app.init();
+  new PortfolioApp().init();
 });
