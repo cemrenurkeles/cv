@@ -20,6 +20,8 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   font-family: "Plus Jakarta Sans", sans-serif;
   color: var(--text);
@@ -32,9 +34,21 @@ a {
 }
 
 body > header,
-body > main {
+body > main,
+body > footer {
   width: min(1160px, calc(100% - 32px));
   margin-inline: auto;
+}
+
+body > main {
+  flex: 1;
+}
+
+body > footer {
+  margin: auto auto 24px;
+  padding: 12px 18px;
+  color: var(--panel-soft);
+  text-align: center;
 }
 
 body > header {
@@ -207,7 +221,8 @@ main article ul {
 
 @media (max-width: 560px) {
   body > header,
-  body > main {
+  body > main,
+  body > footer {
     width: min(100% - 20px, 1160px);
   }
 

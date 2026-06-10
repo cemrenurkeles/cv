@@ -37,6 +37,9 @@
         </div>
       </section>
     </main>
+    <footer>
+      <p>Ⓒ 2026 Cemrenur Keles</p>
+    </footer>
     <script src="./assets/js/app.js"></script>
   </body>
 </html>
