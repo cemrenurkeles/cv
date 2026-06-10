@@ -23,7 +23,9 @@
         <div>
           <article>
             <header>
-              <span></span>
+              <span class="logo logo--horizontal">
+                <img src="./assets/img/unistra.png" alt="Logo de l'Universite de Strasbourg" />
+              </span>
               <time datetime="2022">Depuis 2022</time>
             </header>
             <h2>Etudiante - Universite de Strasbourg</h2>
@@ -34,7 +36,9 @@
           </article>
           <article>
             <header>
-              <span></span>
+              <span class="logo logo--vertical">
+                <img src="./assets/img/pontonniers.png" alt="Logo du lycee des Pontonniers" />
+              </span>
               <time datetime="2019">2019 - 2022</time>
             </header>
             <h2>Lyceenne - Lycee des Pontonniers, Strasbourg</h2>
