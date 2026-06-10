@@ -37,9 +37,7 @@
         </div>
       </section>
     </main>
-    <footer>
-      <p>Ⓒ 2026 Cemrenur Keles</p>
-    </footer>
+    <?php include 'assets/php/footer.php'; ?>
     <script src="./assets/js/app.js"></script>
   </body>
 </html>

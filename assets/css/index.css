@@ -19,7 +19,7 @@ main section > header img {
 
 main section > header h1 {
   max-width: none;
-  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  font-size: clamp(1.2rem, 2.5vw, 2.1rem);
 }
 
 main section > header div p {

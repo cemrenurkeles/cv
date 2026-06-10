@@ -21,7 +21,7 @@
             <img src="./assets/img/japon.png" alt="Photo du Japon" />
           </figure>
           <div>
-            <h1>Cemrenur Keles</h1>
+            <h1>Bienvenue sur mon site !</h1>
             <p>
               Je vous souhaite la bienvenue sur ma page web ! Et je vous remercie pour toute l'attention et l'intérêt que vous lui accordez.
             </p>
@@ -39,9 +39,7 @@
         </div>
       </section>
     </main>
-    <footer>
-      <p>Ⓒ 2026 Cemrenur Keles</p>
-    </footer>
+    <?php include 'assets/php/footer.php'; ?>
     <script src="./assets/js/app.js"></script>
   </body>
 </html>
