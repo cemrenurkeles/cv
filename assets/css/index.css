@@ -1,7 +1,7 @@
 main section > header {
   display: grid;
-  grid-template-columns: 180px minmax(0, 1fr);
-  gap: 28px;
+  grid-template-columns: minmax(240px, 320px) minmax(0, 1fr);
+  gap: 32px;
   align-items: start;
 }
 
@@ -12,21 +12,20 @@ main section > header figure {
 main section > header img {
   display: block;
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
   border-radius: 20px;
 }
 
 main section > header h1 {
-  align-self: center;
   max-width: none;
-  font-size: clamp(3.2rem, 7vw, 6rem);
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
 }
 
-main section > p {
+main section > header div p {
   width: 100%;
   max-width: none;
-  margin-top: 28px;
+  margin-top: 24px;
   color: var(--muted);
   font-size: 1.05rem;
   line-height: 1.8;
@@ -38,7 +37,7 @@ main section > p {
   justify-content: center;
   gap: 14px;
   width: 100%;
-  margin-top: 28px;
+  margin-top: 32px;
 }
 
 @media (max-width: 860px) {
@@ -48,6 +47,6 @@ main section > p {
   }
 
   main section > header figure {
-    width: min(220px, 100%);
+    width: min(320px, 100%);
   }
 }

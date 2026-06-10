@@ -160,7 +160,8 @@ main > section {
   box-shadow: var(--shadow);
 }
 
-main header p {
+main > section > header > p,
+main > section > article > header > p {
   margin-bottom: 12px;
   color: var(--panel-soft);
   font-weight: 800;
