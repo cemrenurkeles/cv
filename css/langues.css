@@ -1,9 +1,0 @@
-main h1 {
-  max-width: 14ch;
-}
-
-main section > div {
-  display: grid;
-  gap: 16px;
-  margin-top: 32px;
-}
