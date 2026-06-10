@@ -17,40 +17,21 @@
     <header></header>
     <main>
       <section>
-        <article>
-          <header>
-            <p>Etudiante en informatique</p>
-            <h1>Cemrenur Keles, a la recherche d'une annee de cesure utile et formatrice.</h1>
-          </header>
-          <p>
-            Je recherche un emploi a temps plein pour mettre a profit mon annee
-            de cesure. J'aime les projets concrets, le travail en equipe et le
-            developpement d'applications utiles, du frontend au backend.
-          </p>
-          <div class="actions">
-            <a href="./contact.php">Me contacter</a>
-            <a href="./experiences.php">Voir mon parcours</a>
-          </div>
-          <ul>
-            <li>Licence en informatique a l'Universite de Strasbourg</li>
-            <li>Experiences associatives, evenementielles et techniques</li>
-            <li>Developpement full stack, Unity, Java, Python et web</li>
-          </ul>
-        </article>
-        <aside>
+        <header>
           <figure>
             <img src="./assets/img/profile-photo.png" alt="Portrait de Cemrenur Keles" />
           </figure>
-          <article>
-            <header>
-              <p>Presentation</p>
-            </header>
-            <p>
-              Etudiante motivee, curieuse et polyvalente, prete a s'investir
-              dans une experience professionnelle concrete.
-            </p>
-          </article>
-        </aside>
+          <h1>Cemrenur Keles</h1>
+        </header>
+        <p>
+          Je recherche un emploi a temps plein pour mettre a profit mon annee
+          de cesure. J'aime les projets concrets, le travail en equipe et le
+          developpement d'applications utiles, du frontend au backend.
+        </p>
+        <div class="actions">
+          <a href="./contact.php">Me contacter</a>
+          <a href="./experiences.php">Voir mon parcours</a>
+        </div>
       </section>
     </main>
     <script src="./js/app.js"></script>
