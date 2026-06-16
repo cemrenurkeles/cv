@@ -1,1 +1,6 @@
 Lien vers ggj : https://globalgamejam.org/games/2025/doububble-troububble-3
+
+logo types: 
+null = carre;
+true = horizontal;
+false = vertical;
