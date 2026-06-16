@@ -1,20 +1,20 @@
-main > section {
+section {
   background: transparent;
   border: 0;
   padding: 0;
   box-shadow: none;
 }
 
-main > section > header {
+section > header {
   padding: 34px 18px 18px;
   background: rgba(128, 152, 225, 0.32);
 }
 
-main > section > header h1 {
+section > header h1 {
   font-size: clamp(1.5rem, 3.5vw, 2.4rem);
 }
 
-main > section > header::after {
+section > header::after {
   content: "";
   display: block;
   height: 10px;
@@ -22,24 +22,24 @@ main > section > header::after {
   background: var(--panel-soft);
 }
 
-main > section > header.section-break {
+section > header.section-break {
   margin-top: 28px;
 }
 
-main > section > div {
+section > div {
   display: grid;
   gap: 18px;
   margin-top: 18px;
 }
 
-main > section > div > article {
+section > div > article {
   padding: 28px 28px 30px;
   border: 0;
   border-radius: 0;
   background: rgba(128, 152, 225, 0.52);
 }
 
-main > section > div > article > header {
+section > div > article > details > summary > header {
   display: grid;
   grid-template-columns: 160px 1fr;
   gap: 24px;
@@ -47,7 +47,7 @@ main > section > div > article > header {
   margin-bottom: 12px;
 }
 
-main > section > div > article > header span {
+section > div > article > details > summary > header span {
   display: block;
   width: 120px;
   height: 18px;
@@ -55,7 +55,7 @@ main > section > div > article > header span {
   border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
-main > section > div > article > header .logo {
+section > div > article > details > summary > header .logo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,33 +66,33 @@ main > section > div > article > header .logo {
   border: 0;
 }
 
-main > section > div > article > header .logo img {
+section > div > article > details > summary > header .logo img {
   display: block;
   object-fit: contain;
 }
 
-main > section > div > article > header .logo--horizontal img {
+section > div > article > details > summary > header .logo--horizontal img {
   max-width: 130px;
   max-height: 58px;
 }
 
-main > section > div > article > header .logo--vertical img {
+section > div > article > details > summary > header .logo--vertical img {
   max-width: 92px;
   max-height: 102px;
 }
 
-main > section > div > article > header .logo--square img {
+section > div > article > details > summary > header .logo--square img {
   max-width: 92px;
   max-height: 92px;
 }
 
-main > section > div > article > header time {
+section > div > article > details > summary > header time {
   color: var(--panel-soft);
   font-size: clamp(0.625rem, 1.5vw, 1rem);
   font-weight: 800;
 }
 
-main > section > div > article h2 {
+section > div > article h2 {
   width: calc(100% - 184px);
   max-width: none;
   margin-left: 184px;
@@ -101,7 +101,7 @@ main > section > div > article h2 {
   line-height: 1.02;
 }
 
-main > section > div > article ul {
+section > div > article ul {
   width: calc(100% - 184px);
   max-width: none;
   margin-top: 14px;
@@ -109,40 +109,36 @@ main > section > div > article ul {
   padding-left: 24px;
 }
 
-main > section > div > article li {
+section > div > article li {
   color: var(--panel-soft);
   font-size: clamp(0.575rem, 1.2vw, 0.85rem);
   font-weight: 700;
   line-height: 1.35;
 }
 
-main > section > div > article li + li {
+section > div > article li + li {
   margin-top: 10px;
 }
 
 @media (max-width: 860px) {
-  main > section > div > article > header {
+  section > div > article > details > summary > header {
     grid-template-columns: 1fr;
     gap: 14px;
   }
 
-  main > section > div > article > header span,
-  main > section > div > article > header .logo {
+  section > div > article > details > summary > header span,
+  section > div > article > details > summary > header .logo {
     margin-left: 0;
   }
 
-  main > section > div > article > header .logo {
+  section > div > article > details > summary > header .logo {
     justify-content: flex-start;
   }
 
-  main > section > div > article h2,
-  main > section > div > article ul {
+  section > div > article h2,
+  section > div > article ul {
     width: auto;
     max-width: none;
     margin-left: 0;
   }
-}
-
-.lien {
-  color:aqua;
 }

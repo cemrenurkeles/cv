@@ -41,7 +41,9 @@ data.forEach(item => {
             : `${formatDate(item.date_debut)} - ${formatDate(item.date_fin)}`;
 
     const article = `
-        <article>
+    <article>
+    <details>
+        <summary>
             <header>
                 <span class="logo logo--${logoType}">
                     <a href="${item.lien_enseigne ?? "#"}" target="_blank" rel="noopener noreferrer">
@@ -54,6 +56,12 @@ data.forEach(item => {
 
             <h2>${item.title}</h2>
             <p>${item.description}</p>
+            </summary>
+        
+        <div>
+            ${item.other}
+        </div>
+        </details>
         </article>
     `;
 
