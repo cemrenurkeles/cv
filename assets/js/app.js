@@ -57,7 +57,7 @@ class PortfolioApp {
         { label: "Formation", href: "./formation.php", page: "formation" },
         { label: "Expériences", href: "./experiences.php", page: "experiences" },
         { label: "Compétences", href: "./competences.php", page: "competences" },
-        { label: "Langues", href: "./langues.php", page: "langues" }
+        { label: "Projets", href: "./projets.php", page: "projets" }
       ],
       contact: {
         label: "Contact",

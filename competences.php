@@ -36,6 +36,27 @@
           </article>
         </div>
       </section>
+            <section>
+        <header>
+          <p>Langues</p>
+          <h1>Langues et centres d'intérêt</h1>
+        </header>
+        <div>
+          <article>
+            <h2>Langues parlées</h2>
+            <p>Turc langue maternelle, anglais niveau B2, coréen niveau A2</p>
+          </article>
+          <article>
+            <h2>Centres d'intérêt</h2>
+            <p>Taekwondo, apprentissage des langues, curiosité culturelle et projets collaboratifs</p>
+          </article>
+          <article>
+            <h2>Voyages</h2>
+            <p>Corée du Sud, Japon, Suisse, Italie, Espagne</p>
+          </article>
+        </div>
+      </section>
+
     </main>
     <?php include 'assets/php/footer.php'; ?>
     <script src="./assets/js/app.js"></script>
