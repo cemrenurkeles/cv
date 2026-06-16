@@ -24,26 +24,26 @@
           <article>
             <header>
               <span class="logo logo--horizontal">
-                <img src="./assets/img/unistra.png" alt="Logo de l'Universite de Strasbourg" />
+                <img src="./assets/img/unistra.png" alt="Logo de l'Université de Strasbourg" />
               </span>
               <time datetime="2022">Depuis 2022</time>
             </header>
-            <h2>Etudiante - Universite de Strasbourg</h2>
+            <h2>Étudiante - Université de Strasbourg</h2>
             <ul>
-              <li>Licence en informatique avec resolution pratique de problemes.</li>
-              <li>Programme soutenu en mathematiques pour la composante theorique de l'informatique.</li>
+              <li>Licence en informatique avec résolution pratique de problèmes.</li>
+              <li>Programme soutenu en mathématiques pour la composante théorique de l'informatique.</li>
             </ul>
           </article>
           <article>
             <header>
               <span class="logo logo--vertical">
-                <img src="./assets/img/pontonniers.png" alt="Logo du lycee des Pontonniers" />
+                <img src="./assets/img/pontonniers.png" alt="Logo du lycée des Pontonniers" />
               </span>
               <time datetime="2019">2019 - 2022</time>
             </header>
-            <h2>Lyceenne - Lycee des Pontonniers, Strasbourg</h2>
+            <h2>Lycéenne - Lycée des Pontonniers, Strasbourg</h2>
             <ul>
-              <li>Parcours general avec specialites mathematiques, physique-chimie et SVT.</li>
+              <li>Parcours général avec spécialités mathématiques, physique-chimie et SVT.</li>
             </ul>
           </article>
         </div>

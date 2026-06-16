@@ -19,20 +19,20 @@
       <section>
         <header>
           <p>Langues</p>
-          <h1>Langues et centres d'interet</h1>
+          <h1>Langues et centres d'intérêt</h1>
         </header>
         <div>
           <article>
-            <h2>Langues parlees</h2>
-            <p>Turc langue maternelle, anglais niveau B2, coreen niveau A2</p>
+            <h2>Langues parlées</h2>
+            <p>Turc langue maternelle, anglais niveau B2, coréen niveau A2</p>
           </article>
           <article>
-            <h2>Centres d'interet</h2>
-            <p>Taekwondo, apprentissage des langues, curiosite culturelle et projets collaboratifs</p>
+            <h2>Centres d'intérêt</h2>
+            <p>Taekwondo, apprentissage des langues, curiosité culturelle et projets collaboratifs</p>
           </article>
           <article>
             <h2>Voyages</h2>
-            <p>Coree du Sud, Japon, Suisse, Italie, Espagne</p>
+            <p>Corée du Sud, Japon, Suisse, Italie, Espagne</p>
           </article>
         </div>
       </section>

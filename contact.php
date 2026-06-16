@@ -23,7 +23,7 @@
         </header>
         <div>
           <article>
-            <h2>Coordonnees</h2>
+            <h2>Coordonnées</h2>
             <p>Rue Henri Loux, 67200 Strasbourg</p>
             <p>cemrenurkeles@gmail.com</p>
             <p>06 66 14 93 26</p>

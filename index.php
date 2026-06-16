@@ -26,7 +26,7 @@
               Je vous souhaite la bienvenue sur ma page web ! Et je vous remercie pour toute l'attention et l'intérêt que vous lui accordez.
             </p>
             <p>
-              Ce site web a pour objectif de vous me présenter. Vous y découvrirez mes projets, mes expériences associatives ainsi que mes expériences professionnelles.
+              Ce site web a pour objectif de me présenter. Vous y découvrirez mes projets, mes expériences associatives ainsi que mes expériences professionnelles.
             </p>
             <p>
               Vous pourrez y trouver les liens vers mes dépôts Git, ainsi que vers les associations, les entreprises et les universités qui ont contribué à mon parcours et à ma formation. Ainsi, vous pourrez accéder à des informations plus détaillées que celles figurant sur mon CV.
