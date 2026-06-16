@@ -4,7 +4,7 @@ class Component {
   }
 
   render() {
-    throw new Error("La methode render() doit etre implementee.");
+    throw new Error("La méthode render() doit être implémentée.");
   }
 }
 
@@ -36,7 +36,7 @@ class Navbar extends Component {
           <strong>CK</strong>
           <span>
             <span>Cemrenur Keles</span>
-            <span>Etudiante en informatique</span>
+            <span>Étudiante en informatique</span>
           </span>
         </a>
         <ul>
@@ -55,8 +55,8 @@ class PortfolioApp {
       links: [
         { label: "Accueil", href: "./index.php", page: "home" },
         { label: "Formation", href: "./formation.php", page: "formation" },
-        { label: "Experiences", href: "./experiences.php", page: "experiences" },
-        { label: "Competences", href: "./competences.php", page: "competences" },
+        { label: "Expériences", href: "./experiences.php", page: "experiences" },
+        { label: "Compétences", href: "./competences.php", page: "competences" },
         { label: "Langues", href: "./langues.php", page: "langues" }
       ],
       contact: {
