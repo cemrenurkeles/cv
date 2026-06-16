@@ -55,7 +55,7 @@ section > div > article > details > summary > header span {
   border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
-section > div > article > details > summary > header .logo {
+ .logo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,22 +66,22 @@ section > div > article > details > summary > header .logo {
   border: 0;
 }
 
-section > div > article > details > summary > header .logo img {
+ .logo img {
   display: block;
   object-fit: contain;
 }
 
-section > div > article > details > summary > header .logo--horizontal img {
+.logo--horizontal img {
   max-width: 130px;
   max-height: 58px;
 }
 
-section > div > article > details > summary > header .logo--vertical img {
+ .logo--vertical img {
   max-width: 92px;
   max-height: 102px;
 }
 
-section > div > article > details > summary > header .logo--square img {
+.logo--square img {
   max-width: 92px;
   max-height: 92px;
 }
@@ -111,13 +111,63 @@ section > div > article ul {
 
 section > div > article li {
   color: var(--panel-soft);
-  font-size: clamp(0.575rem, 1.2vw, 0.85rem);
+  font-size: clamp(0.70rem, 1.5vw, 1rem);
   font-weight: 700;
   line-height: 1.35;
 }
 
 section > div > article li + li {
   margin-top: 10px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  padding-top: 20px;
+}
+
+.card img {
+  width: 120px;      /* taille raisonnable */
+  height: 120px;
+  object-fit: contain;
+  flex-shrink: 0;    /* empêche l’image de se réduire */
+}
+
+.card .content {
+  display: flex;
+  flex-direction: column;
+}
+summary {
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+  padding-bottom: 50px;
+}
+
+/* supprime flèche native Chrome/Safari */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* supprime flèche Firefox (bonus) */
+summary {
+  list-style-type: none;
+}
+
+summary::after {
+  content: "▼";
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 30px;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+details[open] summary::after {
+  transform: rotate(180deg);
 }
 
 @media (max-width: 860px) {
@@ -141,4 +191,34 @@ section > div > article li + li {
     max-width: none;
     margin-left: 0;
   }
+
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+.vlog_card {
+  gap: 20px;
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+
+.vlog_card img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.vlog_card .vlog {
+  width: 50%;
+  display: flex;
+  align-items: center;
 }

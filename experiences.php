@@ -18,15 +18,17 @@
     <main>
       <section>
         <header>
-          <h1>Expériences associatives</h1>
-        </header>
-        <div id="asso"></div>
 
-        <header class="section-break">
           <h1>Expériences professionnelles</h1>
         </header>
+                <div id="pro"></div>
 
-          <div id="pro"></div>
+
+        <header class="section-break">
+                    <h1>Expériences associatives</h1>
+        </header>
+                <div id="asso"></div>
+
       </section>
     </main>
     <?php include 'assets/php/footer.php'; ?>

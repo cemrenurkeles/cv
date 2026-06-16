@@ -54,11 +54,11 @@ data.forEach(item => {
                 <time>${dateDisplay}</time>
             </header>
 
-            <h2>${item.title}</h2>
+            <h2>${item.title} - <a href="${item.lien_enseigne ?? "#"}" target="_blank" rel="noopener noreferrer"> ${item.entreprise} </a></h2>
             <p>${item.description}</p>
             </summary>
         
-        <div>
+        <div class="vlog_card">
             ${item.other}
         </div>
         </details>
