@@ -20,34 +20,17 @@
         <header>
           <h1>Expériences associatives</h1>
         </header>
-        <div id="asso">
-          <article>
-            <header>
-              <span class="logo logo--horizontal">
-                <img src="./assets/img/" alt="Logo du Parlement européen" />
-              </span>
-              <time datetime="2023-05">05/2023</time>
-            </header>
-            <h2> - </h2>
-            <ul>
-              <li>.</li>
-            </ul>
-          </article>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
-          </div>
+        <div id="asso"></div>
 
         <header class="section-break">
           <h1>Expériences professionnelles</h1>
         </header>
 
-          <div id="pro">
-              <time datetime="2024-09">Depuis 09/2024</time>
-            </header>
-            <h2> - </h2>
-        </div>
+          <div id="pro"></div>
       </section>
     </main>
     <?php include 'assets/php/footer.php'; ?>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/experience.js"></script>
 
